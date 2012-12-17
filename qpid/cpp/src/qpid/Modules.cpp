@@ -89,8 +89,12 @@ void loadModuleDir (std::string dirname, bool isDefault)
     fs::directory_iterator endItr;
     for (fs::directory_iterator itr (dirPath); itr != endItr; ++itr)
     {
-        if (!fs::is_directory(*itr) && isShlibName(itr->string()))
-            tryShlib (itr->string().data(), true);
+// mdh for older filesystem in boost
+//        if (!fs::is_directory(*itr) && isShlibName(itr->string()))
+//            tryShlib (itr->string().data(), true);
+// mdh - newer filesystem code
+		if (!fs::is_directory(*itr) && isShlibName(itr->path().filename().string()))
+            tryShlib (itr->path().filename().string().data(), true);
     }
 }
 

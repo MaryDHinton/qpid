@@ -32,9 +32,12 @@
 #include "qpid/broker/amqp/Translation.h"
 #include "qpid/broker/amqp_0_10/MessageTransfer.h"
 #include "qpid/framing/Buffer.h"
+#include "qpid/framing/ProtocolInitiation.h"
 #include "qpid/framing/ProtocolVersion.h"
 #include "qpid/sys/ConnectionCodec.h"
 #include "qpid/log/Statement.h"
+#include "qpid/sys/outputControl.h"
+#include "qpid/sys/SecuritySettings.h"
 
 namespace qpid {
 namespace broker {

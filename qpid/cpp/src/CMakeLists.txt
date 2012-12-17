@@ -1237,7 +1237,7 @@ add_library (qpidbroker SHARED ${qpidbroker_SOURCES})
 target_link_libraries (qpidbroker qpidcommon ${qpidbroker_platform_LIBS})
 set_target_properties (qpidbroker PROPERTIES VERSION ${qpidbroker_version} COMPILE_DEFINITIONS _IN_QPID_BROKER)
 if (MSVC)
-  set_target_properties (qpidbroker PROPERTIES COMPILE_FLAGS /wd4290)
+  set_target_properties (qpidbroker PROPERTIES COMPILE_DEFINITIONS _IN_QPID_BROKER COMPILE_FLAGS /wd4290)
 endif (MSVC)
 install (TARGETS qpidbroker
          DESTINATION ${QPID_INSTALL_LIBDIR}
@@ -1481,7 +1481,7 @@ install_pdb (qmfconsole ${QPID_COMPONENT_QMF})
 # file whereas older builds only have config.h on autoconf-generated builds.
 add_definitions(-DHAVE_CONFIG_H)
 
-add_definitions(-DBOOST_FILESYSTEM_VERSION=2)
+add_definitions(-DBOOST_FILESYSTEM_VERSION=3)
 
 # Now create the config file from all the info learned above.
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/config.h.cmake

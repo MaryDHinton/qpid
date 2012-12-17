@@ -19,24 +19,24 @@
 
 # Optional AMQP1.0 support. Requires proton toolkit.
 
-include(FindPkgConfig)
+#include(FindPkgConfig)
 
-pkg_check_modules(PROTON libqpid-proton)
+#pkg_check_modules(PROTON qpid-proton)
 
-set (amqp_default ${amqp_force})
-if (PROTON_FOUND)
-    message(STATUS "Qpid proton found, amqp 1.0 support enabled")
+#set (amqp_default ${amqp_force})
+#if (PROTON_FOUND)
+#    message(STATUS "Qpid proton found, amqp 1.0 support enabled")
     set (amqp_default ON)
-else (PROTON_FOUND)
-    message(STATUS "Qpid proton not found, amqp 1.0 support not enabled")
-endif (PROTON_FOUND)
+#else (PROTON_FOUND)
+#    message(STATUS "Qpid proton not found, amqp 1.0 support not enabled")
+#endif (PROTON_FOUND)
 
 option(BUILD_AMQP "Build with support for AMQP 1.0" ${amqp_default})
 if (BUILD_AMQP)
 
-    if (NOT PROTON_FOUND)
-      message(FATAL_ERROR "Qpid proton not found, required for amqp 1.0 support")
-    endif (NOT PROTON_FOUND)
+#    if (NOT PROTON_FOUND)
+#      message(FATAL_ERROR "Qpid proton not found, required for amqp 1.0 support")
+#    endif (NOT PROTON_FOUND)
 
     foreach(f ${PROTON_CFLAGS})
       set (PROTON_COMPILE_FLAGS "${PROTON_COMPILE_FLAGS} ${f}")
@@ -79,10 +79,10 @@ if (BUILD_AMQP)
     add_library (amqp MODULE ${amqp_SOURCES})
     target_link_libraries (amqp qpidbroker qpidcommon)
     set_target_properties (amqp PROPERTIES
+	                       COMPILE_DEFINITIONS _IN_QPID_BROKER
                            PREFIX ""
                            COMPILE_FLAGS "${PROTON_COMPILE_FLAGS}"
                            LINK_FLAGS "${PROTON_LINK_FLAGS}")
-    set_target_properties (amqp PROPERTIES COMPILE_DEFINITIONS _IN_QPID_BROKER)
     install (TARGETS amqp
              DESTINATION ${QPIDD_MODULE_DIR}
              COMPONENT ${QPID_COMPONENT_BROKER})
@@ -117,6 +117,7 @@ if (BUILD_AMQP)
     add_library (amqpc MODULE ${amqpc_SOURCES})
     target_link_libraries (amqpc qpidclient qpidcommon)
     set_target_properties (amqpc PROPERTIES
+                           COMPILE_DEFINITIONS _IN_QPID_BROKER
                            PREFIX ""
                            COMPILE_FLAGS "${PROTON_COMPILE_FLAGS}"
                            LINK_FLAGS "${PROTON_LINK_FLAGS}")

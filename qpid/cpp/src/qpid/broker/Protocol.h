@@ -25,6 +25,7 @@
 #include <string>
 #include <boost/shared_ptr.hpp>
 #include <boost/intrusive_ptr.hpp>
+#include "qpid/broker/BrokerImportExport.h"
 
 namespace qpid {
 namespace sys {
@@ -70,7 +71,7 @@ class ProtocolRegistry : public Protocol
     boost::shared_ptr<RecoverableMessage> recover(qpid::framing::Buffer&);
 
     ~ProtocolRegistry();
-    void add(const std::string&, Protocol*);
+    QPID_BROKER_EXTERN void add(const std::string&, Protocol*);
   private:
     //name may be useful for descriptive purposes or even for some
     //limited manipulation of ordering

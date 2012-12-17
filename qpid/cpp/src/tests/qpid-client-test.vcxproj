@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{5A5B4561-356C-4692-AA4E-89B83764B80E}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>qpid-client-test</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\qpidWin\qpidWinSnap\qpid\qpid\cpp\output\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">qpid-client-test.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">qpid-client-test</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\qpidWin\qpidWinSnap\qpid\qpid\cpp\src\tests\output\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">qpid-client-test.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">qpid-client-test</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\qpidWin\qpidWinSnap\qpid\qpid\cpp\src\tests\output\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">qpid-client-test.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">qpid-client-test</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\qpidWin\qpidWinSnap\qpid\qpid\cpp\src\tests\output\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">qpid-client-test.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">qpid-client-test</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 /w44996 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src/windows/resources;C:/boost/boost_1_51_0;C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src;C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src/../include;C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src/tests;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4244;4800;4355;4267;4275;4503</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;BOOST_ALL_DYN_LINK;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0502;HAVE_CONFIG_H;BOOST_FILESYSTEM_VERSION=3;BOOST_TEST_DYN_LINK;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Debug</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/output/Debug/qpid-client-test.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;BOOST_ALL_DYN_LINK;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0502;HAVE_CONFIG_H;BOOST_FILESYSTEM_VERSION=3;BOOST_TEST_DYN_LINK;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src/windows/resources;C:/boost/boost_1_51_0;C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src;C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src/../include;C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src/tests;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src/windows/resources;C:/boost/boost_1_51_0;C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src;C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src/../include;C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src/tests;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\output\Debug\qpidclientd.lib;..\..\output\Debug\qpidcommond.lib;..\..\output\Debug\qpidtypesd.lib;rpcrt4.lib;C:\boost\boost_1_51_0\stage\lib\boost_system-vc100-mt-gd-1_51.lib;ws2_32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/boost/boost_1_51_0/stage/lib;C:/boost/boost_1_51_0/stage/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/output/Debug/qpid-client-test.lib</ImportLibrary>
+      <LinkIncremental>true</LinkIncremental>
+      <ProgramDataBaseFile>C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src/tests/output/Debug/qpid-client-test.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 /w44996 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src/windows/resources;C:/boost/boost_1_51_0;C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src;C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src/../include;C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src/tests;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4244;4800;4355;4267;4275;4503</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BOOST_ALL_DYN_LINK;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0502;HAVE_CONFIG_H;BOOST_FILESYSTEM_VERSION=3;BOOST_TEST_DYN_LINK;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Release</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src/tests/output/Release/qpid-client-test.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BOOST_ALL_DYN_LINK;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0502;HAVE_CONFIG_H;BOOST_FILESYSTEM_VERSION=3;BOOST_TEST_DYN_LINK;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src/windows/resources;C:/boost/boost_1_51_0;C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src;C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src/../include;C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src/tests;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src/windows/resources;C:/boost/boost_1_51_0;C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src;C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src/../include;C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src/tests;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\output\Release\qpidclient.lib;..\output\Release\qpidcommon.lib;..\output\Release\qpidtypes.lib;rpcrt4.lib;C:\boost\boost_1_51_0\stage\lib\boost_system-vc100-mt-1_51.lib;ws2_32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/boost/boost_1_51_0/stage/lib;C:/boost/boost_1_51_0/stage/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src/tests/output/Release/qpid-client-test.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src/tests/output/Release/qpid-client-test.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 /w44996 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src/windows/resources;C:/boost/boost_1_51_0;C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src;C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src/../include;C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src/tests;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4244;4800;4355;4267;4275;4503</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BOOST_ALL_DYN_LINK;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0502;HAVE_CONFIG_H;BOOST_FILESYSTEM_VERSION=3;BOOST_TEST_DYN_LINK;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>MinSizeRel</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src/tests/output/MinSizeRel/qpid-client-test.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BOOST_ALL_DYN_LINK;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0502;HAVE_CONFIG_H;BOOST_FILESYSTEM_VERSION=3;BOOST_TEST_DYN_LINK;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src/windows/resources;C:/boost/boost_1_51_0;C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src;C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src/../include;C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src/tests;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src/windows/resources;C:/boost/boost_1_51_0;C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src;C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src/../include;C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src/tests;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\output\MinSizeRel\qpidclient.lib;..\output\MinSizeRel\qpidcommon.lib;..\output\MinSizeRel\qpidtypes.lib;rpcrt4.lib;C:\boost\boost_1_51_0\stage\lib\boost_system-vc100-mt-1_51.lib;ws2_32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/boost/boost_1_51_0/stage/lib;C:/boost/boost_1_51_0/stage/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src/tests/output/MinSizeRel/qpid-client-test.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src/tests/output/MinSizeRel/qpid-client-test.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 /w44996 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src/windows/resources;C:/boost/boost_1_51_0;C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src;C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src/../include;C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src/tests;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4244;4800;4355;4267;4275;4503</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BOOST_ALL_DYN_LINK;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0502;HAVE_CONFIG_H;BOOST_FILESYSTEM_VERSION=3;BOOST_TEST_DYN_LINK;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>RelWithDebInfo</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src/tests/output/RelWithDebInfo/qpid-client-test.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BOOST_ALL_DYN_LINK;_CRT_NONSTDC_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0502;HAVE_CONFIG_H;BOOST_FILESYSTEM_VERSION=3;BOOST_TEST_DYN_LINK;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src/windows/resources;C:/boost/boost_1_51_0;C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src;C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src/../include;C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src/tests;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src/windows/resources;C:/boost/boost_1_51_0;C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src;C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src/../include;C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src/tests;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\output\RelWithDebInfo\qpidclient.lib;..\output\RelWithDebInfo\qpidcommon.lib;..\output\RelWithDebInfo\qpidtypes.lib;rpcrt4.lib;C:\boost\boost_1_51_0\stage\lib\boost_system-vc100-mt-1_51.lib;ws2_32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/boost/boost_1_51_0/stage/lib;C:/boost/boost_1_51_0/stage/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src/tests/output/RelWithDebInfo/qpid-client-test.lib</ImportLibrary>
+      <LinkIncremental>true</LinkIncremental>
+      <ProgramDataBaseFile>C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src/tests/output/RelWithDebInfo/qpid-client-test.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="qpid-client-test.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/qpidWin/qpidWinSnap/qpid/qpid/cpp/src/qpidclient.vcxproj">
+      <Project>2A84FE89-64AA-4D7D-A78C-BB011100943E</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -37,7 +37,7 @@ class FanOutExchange : public virtual Exchange {
     BindingsArray bindings;
     FedBinding fedBinding;
   public:
-    static const std::string typeName;
+    QPID_BROKER_EXTERN static const std::string typeName;
         
     QPID_BROKER_EXTERN FanOutExchange(const std::string& name,
                                       management::Manageable* parent = 0, Broker* broker = 0);

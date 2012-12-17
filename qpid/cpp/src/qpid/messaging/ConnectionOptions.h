@@ -21,6 +21,7 @@
  * under the License.
  *
  */
+#include "qpid/messaging/ImportExport.h"
 #include "qpid/client/ConnectionSettings.h"
 #include <map>
 #include <vector>
@@ -43,8 +44,8 @@ struct ConnectionOptions : qpid::client::ConnectionSettings
     int32_t retries;
     bool reconnectOnLimitExceeded;
 
-    ConnectionOptions(const std::map<std::string, qpid::types::Variant>&);
-    void set(const std::string& name, const qpid::types::Variant& value);
+    QPID_MESSAGING_EXTERN ConnectionOptions(const std::map<std::string, qpid::types::Variant>&);
+    QPID_MESSAGING_EXTERN void set(const std::string& name, const qpid::types::Variant& value);
 };
 }} // namespace qpid::messaging
 

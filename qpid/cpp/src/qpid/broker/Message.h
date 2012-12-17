@@ -50,7 +50,7 @@ enum MessageState
 
 class Message {
 public:
-    class Encoding : public AsyncCompletion
+    QPID_BROKER_CLASS_EXTERN class Encoding : public AsyncCompletion
     {
       public:
         virtual ~Encoding() {}
@@ -91,7 +91,7 @@ public:
     sys::AbsTime getExpiration() const { return expiration; }
     void setExpiration(sys::AbsTime exp) { expiration = exp; }
     uint64_t getTtl() const;
-    bool getTtl(uint64_t) const;
+    QPID_BROKER_EXTERN bool getTtl(uint64_t) const;
 
     /** set the timestamp delivery property to the current time-of-day */
     QPID_BROKER_EXTERN void setTimestamp();
@@ -108,8 +108,8 @@ public:
 
     QPID_BROKER_EXTERN uint64_t getContentSize() const;
 
-    Encoding& getEncoding();
-    const Encoding& getEncoding() const;
+    QPID_BROKER_EXTERN Encoding& getEncoding();
+    QPID_BROKER_EXTERN const Encoding& getEncoding() const;
     QPID_BROKER_EXTERN operator bool() const;
 
     bool getIsManagementMessage() const;
